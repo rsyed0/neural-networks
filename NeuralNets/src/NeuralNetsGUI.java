@@ -52,7 +52,11 @@ public class NeuralNetsGUI extends JFrame{
 			netPanel.add(load);
 			netPanel.add(train);
 			
+			JPanel layerPanel = new JPanel();
+			
+			
 			createForm = new JPanel();
+			createForm.setLayout(new GridLayout());
 			
 			runForm = new JPanel();
 			loadForm = new JPanel();

@@ -26,16 +26,17 @@ public class MnistImageInterpreter {
 		final double ETA = 0.5;
 		final int START = 2000;
 		final int END = 10000;
+		final int EPOCHS = 1;
 		
 		// if network.txt is empty
 		if (network == null){
 			// create network, save it at network.txt
 			network = new Network(new int[]{784,28,10},"network.txt");
 			// train with MNIST images
-			network.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte",ETA,START,END);
+			network.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte",ETA,START,END,EPOCHS);
 		} else {
 			// train with MNIST images
-			network.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte",ETA,START,END);
+			network.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte",ETA,START,END,EPOCHS);
 		}
 		
 		network.saveNetworkAtResource("network.txt");

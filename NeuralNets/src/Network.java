@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-// TODO Fix problems of sigmoid function; z is too large, and turns all inputs to 1.
 /**
  * A class to represent an artificial neural network (ANN), currently being used to classify
  * images from the MNIST dataset in conjunction with the ImageInterpreter class. 
@@ -230,11 +229,12 @@ public class Network {
 	 * @param eta The rate at which the network should learn; the learning rate.
 	 * @param start The starting index of the MNIST images that should be shown to the network.
 	 * @param end The ending index of the MNIST images that should be shown to the network. 
+	 * @param epochs The number of times that the set of images should be shown.
 	 * @since 1.0
 	 * @see MnistDataReader
 	 * @see MnistMatrix
 	 */
-	public void trainFromMnistData(String imagesName,String labelsName,double eta,int start,int end){
+	public void trainFromMnistData(String imagesName,String labelsName,double eta,int start,int end,int epochs){
 		
 		// load training image data from MNIST dataset
 		MnistMatrix[] mnistMatrix = null;
@@ -249,95 +249,99 @@ public class Network {
 		assert (network.get(network.size()-1).length == 10);
 		assert (start>=0 && end<=mnistMatrix.length);
 		
-		// for each MNIST image
-		for (int image=start;image<end;image++){
-			MnistMatrix img = mnistMatrix[image];
+		// run a certain number of epochs
+		for (int epoch=0;epoch<epochs;epoch++){
 			
-			int r = img.getNumberOfRows();
-			int c = img.getNumberOfColumns();
-			int label = img.getLabel();
+			System.out.println("Starting epoch "+(epoch+1)+"...");
 			
-			double[] target = new double[10];
-			double[] brightness = new double[r*c];
-
-			// populate brightness array
-			for (int i=1;i<r*c;i++)
-				brightness[i-1] = img.getValue(i/c,i%c)/256.0;
-			
-			// populate target array
-			for (int i=0;i<10;i++){
-				if ((i+1)==label) target[i] = 1.0;
-				else target[i] = 0.0;
-			}
-			
-			// run ANN, store values as out
-			List<double[]> out = run(brightness);
-			
-			/* 
-			 * Start of backpropagation training of ANN. The algorithm computes a quantity called
-			 * the node delta for each neuron, equal to the partial derivative of the total error
-			 * of the neural network with respect to the net input of that neuron. The partial
-			 * derivative of the total error with respect to the value of the weight of a connection
-			 * terminating at that neuron is equal to its node delta multiplied by the output of
-			 * the originating neuron. This rate of change is used to update the weight of each
-			 * connection by subtracting from that weight a quantity equal to the learning rate
-			 * eta multiplied by the rate of change, or partial derivative.
-			 * 
-			 * See also: https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
-			 * 
-			 * Written by Reedit Shahriar on December 28, 2017.
-			 * TODO Fix algorithm implementation.
-			 */
-			
-			// node deltas for each neuron in previous layer
-			List<Double> nodeDeltas = new ArrayList<>();
-			
-			// compute first layer of weights
-			// for each neuron in the output layer
-			for (int index=0;index<network.get(network.size()-1).length;index++){
+			// for each MNIST image within range
+			for (int image=start;image<end;image++){
+				MnistMatrix img = mnistMatrix[image];
 				
-				// compute neuron node delta
-				double neuralOutput = out.get(network.size()-1)[index];
-				double nodeDelta = (neuralOutput-target[index])*((neuralOutput)*(1-neuralOutput));
-				nodeDeltas.add(nodeDelta);
+				int r = img.getNumberOfRows();
+				int c = img.getNumberOfColumns();
+				int label = img.getLabel();
 				
-				// get weights for this output neuron
-				double[] weights = network.get(network.size()-1)[index].getWeights(); 
+				double[] target = new double[10];
+				double[] brightness = new double[r*c];
+	
+				// populate brightness array
+				for (int i=1;i<r*c;i++)
+					brightness[i-1] = img.getValue(i/c,i%c)/256.0;
 				
-				// for each connection weight connected to the output neuron, update that weight
-				for (int weightIndex=0;weightIndex<weights.length;weightIndex++)
-					network.get(network.size()-1)[index].setWeight(weights[weightIndex]-(eta*nodeDelta*out.get(network.size()-2)[weightIndex]),weightIndex);
+				// populate target array
+				for (int i=0;i<10;i++){
+					if (i==label) target[i] = 1.0;
+					else target[i] = 0.0;
+				}
 				
-			}
-			
-			// go through each layer of network backward
-			for (int layer=network.size()-2;layer>0;layer--){
+				// run ANN, store values as out
+				List<double[]> out = run(brightness);
 				
-				List<Double> newNodeDeltas = new ArrayList<>();
+				/* 
+				 * Start of backpropagation training of ANN. The algorithm computes a quantity called
+				 * the node delta for each neuron, equal to the partial derivative of the total error
+				 * of the neural network with respect to the net input of that neuron. The partial
+				 * derivative of the total error with respect to the value of the weight of a connection
+				 * terminating at that neuron is equal to its node delta multiplied by the output of
+				 * the originating neuron. This rate of change is used to update the weight of each
+				 * connection by subtracting from that weight a quantity equal to the learning rate
+				 * eta multiplied by the rate of change, or partial derivative.
+				 * 
+				 * See also: https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+				 * 
+				 * Written by Reedit Shahriar on December 28, 2017.
+				 */
 				
-				for (int index=0;index<network.get(layer).length;index++){
-					
-					// get weights for this neuron
-					double[] weights = network.get(layer)[index].getWeights(); 
+				// node deltas for each neuron in previous layer
+				List<Double> nodeDeltas = new ArrayList<>();
+				
+				// compute first layer of weights
+				// for each neuron in the output layer
+				for (int index=0;index<network.get(network.size()-1).length;index++){
 					
 					// compute neuron node delta
-					double sum = 0;
-					for (int n=0;n<nodeDeltas.size();n++)
-						sum += nodeDeltas.get(n)*network.get(layer+1)[n].getWeight(index);
+					double neuralOutput = out.get(network.size()-1)[index];
+					double nodeDelta = (neuralOutput-target[index])*((neuralOutput)*(1-neuralOutput));
+					nodeDeltas.add(nodeDelta);
 					
-					double nodeDelta = sum*out.get(layer)[index]*(1-out.get(layer)[index]);
-					newNodeDeltas.add(nodeDelta);
+					// get weights for this output neuron
+					double[] weights = network.get(network.size()-1)[index].getWeights(); 
 					
-					// for each connection weight connected to the neuron, update that weight
+					// for each connection weight connected to the output neuron, update that weight
 					for (int weightIndex=0;weightIndex<weights.length;weightIndex++)
-						network.get(layer)[index].setWeight(weights[weightIndex]-(eta*nodeDelta*out.get(layer-1)[weightIndex]),weightIndex);
+						network.get(network.size()-1)[index].setWeight(weights[weightIndex]-(eta*nodeDelta*out.get(network.size()-2)[weightIndex]),weightIndex);
 					
 				}
 				
-				nodeDeltas = newNodeDeltas;
-				
-			}
-			
+				// go through each layer of network backward
+				for (int layer=network.size()-2;layer>0;layer--){
+					
+					List<Double> newNodeDeltas = new ArrayList<>();
+					
+					for (int index=0;index<network.get(layer).length;index++){
+						
+						// get weights for this neuron
+						double[] weights = network.get(layer)[index].getWeights(); 
+						
+						// compute neuron node delta
+						double sum = 0;
+						for (int n=0;n<nodeDeltas.size();n++)
+							sum += nodeDeltas.get(n)*network.get(layer+1)[n].getWeight(index);
+						
+						double nodeDelta = sum*out.get(layer)[index]*(1-out.get(layer)[index]);
+						newNodeDeltas.add(nodeDelta);
+						
+						// for each connection weight connected to the neuron, update that weight
+						for (int weightIndex=0;weightIndex<weights.length;weightIndex++)
+							network.get(layer)[index].setWeight(weights[weightIndex]-(eta*nodeDelta*out.get(layer-1)[weightIndex]),weightIndex);
+						
+					}
+					
+					nodeDeltas = newNodeDeltas;
+					
+				}
+			}	
 		}
 	}
 	
@@ -351,8 +355,9 @@ public class Network {
 	 * @param labelsName The address at which the MNIST testing labels can be found.
 	 * @param start The starting index of the training images to be "shown" to the network.
 	 * @param end The starting index of the training images to be "shown" to the network.
+	 * @param showMistakes A boolean indicating whether or not to render all MNIST images where the network made a mistake.
 	 */
-	public void testAll(String imagesName,String labelsName,int start,int end){
+	public void testAll(String imagesName,String labelsName,int start,int end,boolean showMistakes){
 		
 		// load training image data from MNIST dataset
 		MnistMatrix[] mnistMatrix = null;
@@ -362,6 +367,9 @@ public class Network {
 			System.err.println("Failed to find "+imagesName+" or "+labelsName+".");
 			System.exit(1);
 		}
+		
+		int total = end-start;
+		int correct = 0;
 		
 		for (int index=start;index<end;index++){
 			
@@ -378,7 +386,7 @@ public class Network {
 			for (int i=1;i<r*c;i++)
 				brightness[i-1] = img.getValue(i/c,i%c)/256.0;
 			
-			System.out.print("Label: "+label+", Output: ");
+			//System.out.print("Label: "+label+", Output: ");
 			List<double[]> output = run(brightness);
 			
 			int out = 0;
@@ -390,8 +398,13 @@ public class Network {
 					max = d;
 				}
 			}
-			System.out.print((out+1)+"\n");
+			//System.out.print(out+"\n");
+			
+			if (out == label) correct++;
+			else if (showMistakes) new MnistImageRenderer(img);
 		}
+		
+		System.out.println("Correct: "+correct+"/"+total+", Error: "+100*(1.0-((double)correct/total))+"%");
 		
 	}
 	

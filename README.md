@@ -8,7 +8,8 @@ MNIST image classifier, version 1.1. Create, save, load, and train neural networ
 * Training networks from MNIST dataset
 * Network at network.txt that can classify MNIST images
 * Image prompt and classifier to showcase library
-![Screenshot](/NeuralNets/Screen%20Shot%202018-01-07%20at%207.10.39%20PM.png)
+
+![Screenshot](/NeuralNets/Screen%20Shot%202018-01-07%20at%207.10.39%20PM.png =250x200)
 
 # Future Plans #
 * Implement other types of neural nets

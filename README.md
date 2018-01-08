@@ -1,5 +1,5 @@
 # neural-networks
-MNIST image classifier, version 1.0. Create, save, load, and train neural networks.
+MNIST image classifier, version 1.1. Create, save, load, and train neural networks.
 
 # Current Features #
 * Loading networks from text files

@@ -18,6 +18,10 @@ net.saveNetworkAtResource("foo.txt");
 ```java
 net.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-ubyte", eta, start, end, epochs, bw);
 ```
+* Testing networks from MNIST dataset
+```java
+net.testAll("data/t10k-images.idx3-ubyte", "data/t10k-labels.idx1-ubyte", start, end, showMistakes, bw);
+```
 * Network at network.txt that can classify MNIST images
 * Image prompt and classifier to showcase library
 
@@ -27,3 +31,4 @@ net.trainFromMnistData("data/train-images.idx3-ubyte", "data/train-labels.idx1-u
 * Implement other types of neural nets
 * Add support for other datasets/applications
 * GUI to facilitate usage of library
+* Optimize and implement more efficient algorithms

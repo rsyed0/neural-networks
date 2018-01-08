@@ -32,3 +32,9 @@ net.testAll("data/t10k-images.idx3-ubyte", "data/t10k-labels.idx1-ubyte", start,
 * Add support for other datasets/applications
 * GUI to facilitate usage of library
 * Optimize and implement more efficient algorithms
+
+# Author and Licensing Information #
+Written by Reedit Shahriar in January 2018. Licensed under MIT License.
+
+# Notes #
+* Used code from [this repo](https://github.com/turkdogan/mnist-data-reader) to open MNIST images and read data.

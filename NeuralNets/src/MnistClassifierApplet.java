@@ -1,34 +1,26 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-public class MnistDigitPrompt extends JFrame{
-
-	public static void main(String[] args) {new MnistDigitPrompt();}
-	
-	public MnistDigitPrompt(){
-		
-		super("Digit Analyzer");
-		setSize(500,280);
-		setLocation(100,100);
-		setContentPane(new MnistDigitPromptPanel(this));
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setResizable(false);
-		setVisible(true);
-		
-	}
-
-}
-
-class MnistDigitPromptPanel extends JPanel{
+/**
+ * Applet to classify images. Must have Java plug-in enabled in
+ * the browser in order to work.
+ * 
+ * @author rsyed0
+ * @since 1.2
+ */
+public class MnistClassifierApplet extends JApplet{
 	
 	private DisplayPanel display;
 	private PromptPanel prompt;
-	private Container frame;
 	
-	public MnistDigitPromptPanel(JFrame frame){
-		super();
+	public void start(){
 		setBackground(new Color(220,220,220));
 		
 		prompt = new PromptPanel();
@@ -38,28 +30,7 @@ class MnistDigitPromptPanel extends JPanel{
 		add(prompt);
 		add(display);
 		
-		frame.addWindowListener(new WindowAdapter(){
-		    public void windowClosing(WindowEvent e)
-		    {
-		    	display.getNetwork().saveNetworkAtResource("network.txt");
-		    }
-		});
-		
-		this.frame = frame;
-	}
-	
-	public MnistDigitPromptPanel(JApplet frame){
-		super();
-		setBackground(new Color(220,220,220));
-		
-		prompt = new PromptPanel();
-		display = new DisplayPanel();
-		
-		setLayout(new GridLayout(1,2));
-		add(prompt);
-		add(display);
-		
-		this.frame = frame;
+		setVisible(true);
 	}
 	
 	class DisplayPanel extends JPanel implements ActionListener{
@@ -67,7 +38,6 @@ class MnistDigitPromptPanel extends JPanel{
 		private Network net;
 		private double[] out;
 		private JRadioButton[] buttons;
-		private JCheckBox train;
 		
 		public Network getNetwork(){return net;}
 		
@@ -78,10 +48,22 @@ class MnistDigitPromptPanel extends JPanel{
 			out = new double[10];
 			
 			try {
-				net = Network.loadNetworkFromResource("network.txt");
+				List<String> file = new ArrayList<>();
+				URL url = new URL("https://raw.githubusercontent.com/rsyed0/neural-networks/master/NeuralNets/network.txt");
+				Scanner sc = new Scanner(url.openStream());
+				while (sc.hasNextLine()){
+					file.add(sc.nextLine());
+				}
+				sc.close();
+				net = Network.loadNetworkFromResource(file,"network.txt");
+			} catch (MalformedURLException e) {
+				System.err.println("Bad link.");
+				System.exit(1);
+			} catch (IOException e) {
+				System.err.println("Bad link.");
+				System.exit(1);
 			} catch (NetworkNotFoundException e) {
 				e.printStackTrace();
-				System.exit(1);
 			}
 			
 			assert (net.getNetwork().get(0).length == 784 && net.getNetwork().get(net.getNetwork().size()-1).length == 10);
@@ -94,14 +76,9 @@ class MnistDigitPromptPanel extends JPanel{
 			clear.setBounds(30,225,80,25);
 			clear.addActionListener(this);
 			
-			train = new JCheckBox("Train");
-			train.setBounds(150,100,75,30);
-			train.addActionListener(this);
-			
 			setLayout(null);
 			add(run);
 			add(clear);
-			add(train);
 			
 			buttons = new JRadioButton[10];
 			ButtonGroup bg = new ButtonGroup();
@@ -145,12 +122,6 @@ class MnistDigitPromptPanel extends JPanel{
 			if (cmd.equals("Run Network")){
 				int answer = answerGiven();
 				
-				if (answer == -1 && train.isSelected()){
-					JOptionPane.showMessageDialog(frame,
-						    "You must specify the digit drawn before training the network.");
-					return;
-				}
-				
 				double[] invert = new double[784];
 				double[] brightness = prompt.getBrightness();
 				for (int i=0;i<784;i++) invert[i] = 1.0-brightness[i];
@@ -161,12 +132,6 @@ class MnistDigitPromptPanel extends JPanel{
 				
 				// update displayed output
 				repaint();
-				
-				if (train.isSelected()){
-					// train network
-					final double ETA = 0.5;
-					net.train(invert,answer,ETA);
-				}
 				
 			} else if (cmd.equals("Clear")){
 				prompt.clear();
@@ -271,7 +236,4 @@ class MnistDigitPromptPanel extends JPanel{
 		public void mouseExited(MouseEvent e) {}
 		
 	}
-	
 }
-
-

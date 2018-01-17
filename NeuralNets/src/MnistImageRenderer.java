@@ -28,12 +28,12 @@ public class MnistImageRenderer extends JFrame{
 		
 	}
 	
-	public MnistImageRenderer(String images,String labels,int index){
+	public MnistImageRenderer(String images,String labels,int index,boolean bw){
 		
 		super("MNIST Image");
 		setSize(280,280);
 		setLocation(400,400);
-		setContentPane(new MnistRendererPanel(images,labels,index));
+		setContentPane(new MnistRendererPanel(images,labels,index,bw));
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setResizable(false);
 		setVisible(true);
@@ -66,10 +66,10 @@ class MnistRendererPanel extends JPanel{
 		
 	}
 
-	public MnistRendererPanel(String imagesName, String labelsName, int index) {
+	public MnistRendererPanel(String imagesName, String labelsName, int index,boolean bw) {
 		
 		setBackground(Color.WHITE);
-		this.brightness = Network.convertToBrightness(imagesName, labelsName, index, index+1).get(0);
+		this.brightness = Network.convertToBrightness(imagesName, labelsName, index, index+1,bw).get(0);
 		
 	}
 	
@@ -87,7 +87,7 @@ class MnistRendererPanel extends JPanel{
 		super.paintComponent(g);
 		for (int r=0;r<28;r++){
 			for (int c=0;c<28;c++){
-				g.setColor(new Color((int)(256*brightness[(r*28)+c]),(int)(256*brightness[(r*28)+c]),(int)(256*brightness[(r*28)+c])));
+				g.setColor(new Color((int)(255*brightness[(r*28)+c]),(int)(255*brightness[(r*28)+c]),(int)(255*brightness[(r*28)+c])));
 				g.fillRect(SCALE*c,SCALE*r,SCALE,SCALE);
 			}
 		}

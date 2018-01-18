@@ -24,6 +24,35 @@ public class NflPreprocessor {
 		assert (net.getNetwork().get(0).length == 6 && net.getNetwork().get(net.getNetwork().size()-1).length == 1);
 		this.net = net;
 		
+		// read file for injuries
+		BufferedReader inj = null;
+		try{
+			inj = new BufferedReader(new FileReader("nflInjured.txt"));
+		}catch (IOException e){
+			System.err.println("Error reading injury data.");
+			System.exit(1);
+		}
+		
+		List<String> injured = new ArrayList<>();
+		String line="";
+		try {
+			line = inj.readLine();
+		} catch (IOException e) {
+			System.err.println("Error reading injury data.");
+			System.exit(1);
+		}
+		while (line != null){
+			String[] lineArr = line.split("\\t");
+			if (lineArr.length == 5)
+				injured.add(lineArr[2]);
+			try {
+				line = inj.readLine();
+			} catch (IOException e) {
+				System.err.println("Error reading injury data.");
+				System.exit(1);
+			}
+		}
+		
 		// read Madden file for ratings
 		BufferedReader sc = null;
 		try{
@@ -36,7 +65,7 @@ public class NflPreprocessor {
 		nfl = new HashMap<>();
 		ratings = new HashMap<>();
 		
-		String line = "";
+		line = "";
 		try{
 			line = sc.readLine();
 		}catch(IOException e){
@@ -55,7 +84,8 @@ public class NflPreprocessor {
 				team = new ArrayList<>();
 			}
 			
-			team.add(new NflPlayer(Integer.parseInt(lineArr[4]),lineArr[3]));
+			if (!injured.contains(lineArr[2]+" "+lineArr[1]))
+				team.add(new NflPlayer(Integer.parseInt(lineArr[4]),lineArr[3]));
 			
 			// read next line
 			try {

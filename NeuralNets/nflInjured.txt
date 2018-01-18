@@ -1,0 +1,371 @@
+12/26/17	DB	Antoine Bethea	Pectoral	IR
+12/19/17	WR	Brittan Golden	Arm	IR
+12/07/17	DB	Rudy Ford	Knee	IR
+11/11/17	DB	Tyvon Branch	Knee - ACL	IR
+11/11/17	TE	Ifeanyi Momah	Leg	IR
+10/02/17	LB	Markus Golden	Knee	IR
+09/13/17	RB	David Johnson	 	IR
+09/04/17	RB	T.J. Logan	Wrist	IR
+08/08/17	DB	Ronald Zamort	Knee - ACL	IR
+
+10/31/17	LB	Jordan Tripp	Concussion	IR
+10/03/17	DL	Jack Crawford	Biceps	IR
+09/09/17	DB	Quincy Mauger	Undisclosed	IR
+09/03/17	DL	Martin Ifedi	Ankle	IR
+08/05/17	WR	Devin Fuller	Knee - ACL	IR
+ 
+12/26/17	DB	Jaylen Hill	Knee - ACL + MCL	IR
+12/04/17	DB	Jimmy Smith	Achilles	IR
+09/27/17	DL	Brent Urban	Foot	IR
+09/19/17	LB	Bam Bradley	Knee - ACL	IR
+09/03/17	RB	Kenneth Dixon	Knee - Meniscus	IR
+09/02/17	DB	Brandon Boykin	Undisclosed	IR
+09/01/17	LB	Albert McClellan	Knee - ACL	IR
+09/01/17	DB	Tavon Young	Knee - ACL	IR
+08/06/17	TE	Crockett Gillmore	Knee	IR
+ 
+12/26/17	RB	Travaris Cadet	Ankle	IR
+12/26/17	WR	Andre Holmes	Neck	IR
+12/05/17	DL	Shaq Lawson	Ankle	IR
+12/05/17	WR	Jordan Matthews	Knee	IR
+11/04/17	RB	Taiwan Jones	Arm	IR
+09/03/17	WR	Jeremy Butler	Concussion	IR
+08/08/17	TE	Keith Towbridge	Undisclosed	IR
+ 
+01/02/18	TE	Chris Manhertz	Ankle	IR
+12/26/17	WR	Damiere Byrd	Lower Leg	IR
+12/06/17	LB	Jared Norris	Calf	IR
+11/24/17	WR	Curtis Samuel	Ankle	IR
+10/24/17	DB	Demetrious Cox	Ankle	IR
+10/06/17	DL	Daeshon Hall	Knee	IR
+09/14/17	DB	Cole Luke	Ankle	IR
+09/04/17	DB	Corn Elder	Knee	IR
+09/01/17	WR	Fred Ross	Ankle	IR
+09/01/17	TE	Scott Simonson	Back	IR
+09/01/17	DB	Teddy Williams	Shoulder	IR
+08/14/17	DL	Drew Iddings	Shoulder	IR
+07/26/17	WR	Charles D. Johnson	Knee	IR
+ 
+01/03/18	LB	Jerrell Freeman	Concussion	IR
+12/20/17	LB	Pernell McPhee	Shoulder	IR
+12/05/17	DL	Mitch Unrein	Knee	IR
+12/04/17	K	Cairo Santos	Groin	IR
+12/02/17	LB	Isaiah Irving	Knee	IR
+12/01/17	SS	Quintin Demps	 	IR
+11/23/17	LB	Leonard Floyd	Knee - MCL	IR
+11/07/17	TE	Zach Miller	Knee	IR
+10/10/17	LB	Willie Young	Triceps	IR
+09/12/17	WR	Kevin White	Shoulder	IR
+09/02/17	WR	Cameron Meredith	Knee - ACL + MCL	IR
+ 
+12/22/17	LB	Nick Vigil	Ankle	IR
+12/15/17	LB	Kevin Minter	Hamstring	IR
+12/13/17	QB	Jeff Driskel	 	IR
+12/09/17	DB	Adam Jones	Groin	IR
+12/06/17	WR	John Ross	Shoulder - Labrum	IR
+11/11/17	RB	Jeremy Hill	Ankle	IR
+10/12/17	TE	Tyler Eifert	Back	IR
+09/02/17	RB	Tra Carson	Undisclosed	IR
+09/02/17	TE	Mason Schreck	Knee - MCL	IR
+08/29/17	RB	Cedric Peerman	Shoulder	IR
+ 
+12/19/17	DB	Derrick Kindred	Wrist	IR
+11/21/17	DL	Jamie Meder	Ankle	IR
+11/21/17	DL	Emmanuel Ogbah	Foot	IR
+11/13/17	LB	Jamie Collins	Knee - MCL	IR
+11/08/17	DB	Reggie Porter	Achilles	IR
+10/03/17	LB	Dominique Alexander	Knee	IR
+09/02/17	CB	Howard Wilson	 	PUP
+08/23/17	LB	Tank Carder	Knee - ACL	IR
+06/02/17	RB	Darius Jackson	Knee	IR
+ 
+12/29/17	DB	Orlando Scandrick	Back	IR
+11/06/17	DL	Brian Price	Knee	IR
+10/05/17	DL	Charles Tapper	Foot	IR
+09/04/17	TE	Rico Gathers	Concussion	IR
+09/02/17	DB	Duke Thomas	Foot	IR
+08/01/17	QB	Zac Dysert	Back	IR
+ 
+12/19/17	LB	Shane Ray	Wrist	IR
+12/15/17	QB	Trevor Siemian	Shoulder	IR
+12/13/17	DB	Justin Simmons	Ankle	IR
+12/05/17	DL	Derek Wolfe	Neck	IR
+11/15/17	TE	Jake Butt	Knee - ACL	IR
+11/09/17	QB	Chad Kelly	 	IR
+10/20/17	LB	Corey Nelson	Elbow	IR
+09/15/17	DL	Jared Crick	Back	IR
+09/02/17	WR	Carlos Henderson	Thumb	IR
+08/14/17	DL	Billy Winn	Knee - ACL	IR
+ 
+12/19/17	WR	T.J. Jones	Shoulder	IR
+11/27/17	DB	Tavon Wilson	Shoulder	IR
+10/11/17	DL	Haloti Ngata	Biceps	IR
+09/09/17	DB	Des Lawrence	Undisclosed	IR
+08/27/17	DL	Jordan Hill	Undisclosed	IR
+08/17/17	LB	Brandon Copeland	Pectoral	IR
+08/15/17	DL	Kerry Hyder	Achilles	IR
+08/15/17	RB	Mike James	Concussion	IR
+ 
+12/31/17	LB	Nick Perry	Ankle	IR
+12/22/17	DB	Demetri Goodson	Hamstring	IR
+12/19/17	QB	Aaron Rodgers	Shoulder	IR
+12/06/17	DB	Kevin King	Shoulder	IR
+12/03/17	RB	Ty Montgomery	Wrist	IR
+11/12/17	LB	Joe Thomas	Triceps	IR
+11/03/17	DB	Kentrell Brice	Ankle	IR
+10/16/17	DB	Quinten Rollins	Achilles	IR
+09/04/17	LB	David Talley	Undisclosed	IR
+08/05/17	DB	Herb Waters	Shoulder	IR
+ 
+12/27/17	DB	Corey Moore	Knee - MCL	IR
+12/23/17	QB	Tom Savage	Concussion	IR
+12/20/17	DL	D.J. Reader	Knee	IR
+12/19/17	TE	MyCole Pruitt	Calf	IR
+12/05/17	WR	Bruce Ellington	Hamstring	IR
+12/05/17	TE	C.J. Fiedorowicz	Concussion	IR
+12/04/17	LB	Brennan Scarlett	Foot	IR
+11/29/17	LB	Ben Heeney	Undisclosed	IR
+11/22/17	RB	D'Onta Foreman	Achilles	IR
+11/10/17	TE	Ryan Griffin	Concussion	IR
+11/07/17	QB	Deshaun Watson	Knee - ACL	IR
+10/31/17	DL	Christian Covington	Biceps	IR
+10/11/17	LB	Whitney Mercilus	Pectoral	IR
+10/11/17	DL	J.J. Watt	Lower Leg	IR
+10/04/17	RB	Tyler Ervin	Knee	IR
+09/03/17	DL	Matt Godin	Knee - ACL	IR
+08/02/17	WR	Deante' Gray	Knee - ACL	IR
+05/14/17	T	Derek Newton	 	PUP
+ 
+01/16/18	DB	Pierre Desir	Pectoral	IR
+12/27/17	DB	Rashaan Melvin	Hand	IR
+12/22/17	TE	Brandon Williams	Concussion	IR
+12/18/17	LB	Jon Bostic	Knee	IR
+12/05/17	LB	John Simon	Shoulder	IR
+11/09/17	DB	Malik Hooker	Knee - ACL	IR
+11/09/17	TE	Erik Swoope	 	IR
+11/08/17	DL	Henry Anderson	Neck	IR
+11/02/17	QB	Andrew Luck	Shoulder - Labrum	IR
+10/20/17	RB	Robert Turbin	Elbow	IR
+10/09/17	WR	Krishawn Hogan	Knee	IR
+09/02/17	LB	Edwin Jackson	Undisclosed	IR
+08/29/17	RB	George Winn	Undisclosed	IR
+06/15/17	RB	Christine Michael	Undisclosed	IR
+ 
+12/26/17	WR	Jaelen Strong	Knee - ACL	IR
+11/18/17	WR	Arrelious Benn	Knee	IR
+09/19/17	DL	Michael Bennett	Pectoral	IR
+09/13/17	RB	Brandon Wilds	Shoulder	OUT
+09/12/17	WR	Allen Robinson	Knee - ACL	IR
+09/09/17	RB	I'Tavius Mathers	Spine	IR
+09/03/17	DB	Jarrod Harper	Concussion	IR
+09/02/17	WR	Rashad Greene	Undisclosed	IR
+09/02/17	WR	Shane Wynn	Undisclosed	IR
+09/01/17	TE	Mychal Rivera	Wrist	IR
+08/12/17	RB	Tyler Gaffney	Undisclosed	IR
+ 
+01/03/18	DB	Phillip Gaines	Elbow	IR
+01/02/18	RB	Akeem Hunt	Ankle	IR
+01/02/18	WR	De'Anthony Thomas	Lower Leg	IR
+12/12/17	DB	Steven Terrell	Finger	IR
+12/07/17	LB	Dee Ford	Back	IR
+10/14/17	WR	Chris Conley	Achilles	IR
+09/09/17	DB	Eric Berry	Achilles	IR
+09/03/17	LB	Dadi Nicolas	 	PUP
+09/02/17	DB	Ashton Lampkin	Knee - ACL	IR
+09/02/17	RB	Spencer Ware	Knee - PCL	IR
+08/11/17	DB	Jordan Sterns	Illness	OUT
+ 
+12/19/17	TE	Hunter Henry	Abdomen	IR
+12/12/17	RB	Andre Williams	Wrist	IR
+12/02/17	K	Nick Novak	Back	IR
+09/23/17	DB	Jason Verrett	Knee	IR
+09/09/17	LB	Charmeachealle Moore	Undisclosed	IR
+09/03/17	WR	Isaiah Burse	Concussion	IR
+09/03/17	DL	Kaleb Eulls	Undisclosed	IR
+09/03/17	RB	Kenneth Farrow	Ankle	IR
+08/23/17	LB	Chris Landrum	Shoulder	IR
+08/08/17	TE	Asante Cleveland	Undisclosed	IR
+ 
+12/27/17	DB	Marqui Christian	Shoulder	IR
+12/26/17	DL	Matt Longacre	Back	IR
+12/20/17	QB	Brandon Allen	Back	IR
+12/20/17	K	Greg Zuerlein	Back	IR
+12/11/17	DB	Kayvon Webster	Achilles	IR
+09/06/17	RB	Lenard Tillery	Undisclosed	IR
+09/02/17	TE	Temarrick Hemingway	Lower Leg	IR
+08/05/17	DL	Dominique Easley	Knee - ACL	IR
+ 
+12/29/17	DB	Michael Thomas	Undisclosed	IR
+12/27/17	WR	Leonte Carroo	Undisclosed	OUT
+12/27/17	DL	Vincent Taylor	Knee	IR
+12/20/17	TE	Julius Thomas	Foot	IR
+12/02/17	DB	Maurice Smith	Abdomen	IR
+11/28/17	DL	William Hayes	Hamstring	IR
+10/31/17	DB	Nate Allen	Calf	IR
+09/02/17	DB	Tony Lippett	Foot	IR
+09/02/17	LB	Raekwon McMillan	Knee - ACL	IR
+08/19/17	WR	Isaiah Ford	Knee - Meniscus	IR
+08/12/17	QB	Ryan Tannehill	Knee - ACL	IR
+08/01/17	LB	Lamin Barrow	Undisclosed	IR
+07/25/17	LB	Koa Misi	Neck	IR
+ 
+12/21/17	TE	Blake Bell	Shoulder - AC Joint	IR
+10/05/17	RB	Dalvin Cook	Knee - ACL	IR
+09/09/17	LB	Shaan Washington	Leg	IR
+08/14/17	RB	Bishop Sankey	Knee - ACL	IR
+08/01/17	DL	Sharrif Floyd	Knee	OUT
+ 
+12/28/17	WR	Malcolm Mitchell	 	IR
+11/27/17	TE	Martellus Bennett	Shoulder	IR
+11/27/17	DB	Nate Ebner	Knee	IR
+11/07/17	LB	Dont'a Hightower	Pectoral	IR
+10/25/17	DL	Harvey Langi	Neck	OUT
+10/19/17	OLB	Shea McClellin	 	IR
+09/22/17	DL	Vincent Valentine	Knee	IR
+09/09/17	DL	Caleb Kidder	Undisclosed	IR
+09/02/17	DL	Keionta Davis	Back	OUT
+09/02/17	WR	Julian Edelman	Knee - ACL	IR
+09/02/17	DB	Cyrus Jones	Knee - ACL	IR
+09/02/17	LB	Derek Rivers	Knee - ACL	IR
+ 
+01/11/18	DL	Tony McDaniel	Leg	IR
+01/03/18	TE	Garrett Griffin	Foot	IR
+12/28/17	LB	Hau'oli Kikaha	Ankle	IR
+12/28/17	FB	John Kuhn	 	IR
+12/27/17	DL	John Hughes	Biceps	IR
+12/21/17	DB	Kenny Vaccaro	Groin	IR
+12/19/17	LB	A.J. Klein	Groin	IR
+12/02/17	TE	Coby Fleener	Concussion	IR
+11/22/17	DL	Alex Okafor	Achilles	IR
+11/14/17	RB	Daniel Lasco	Neck	IR
+10/21/17	CB	Delvin Breaux	 	IR
+10/16/17	LB	Nate Stupar	Knee - ACL	IR
+10/04/17	LB	Alex Anzalone	Shoulder	IR
+09/27/17	DL	David Parry	Ankle	IR
+09/20/17	DL	Mitchell Loewen	Ankle	IR
+09/07/17	DL	Devaroe Lawrence	Undisclosed	OUT
+08/28/17	TE	Clay Harbor	Undisclosed	IR
+08/01/17	DL	Nick Fairley	Illness	OUT
+07/04/17	WR	Dan Arnold	Undisclosed	IR
+ 
+12/30/17	WR	Tavarres King	Concussion	IR
+12/27/17	LB	B.J. Goodson	Ankle	IR
+12/26/17	DB	Landon Collins	Forearm	IR
+12/11/17	WR	Darius Powe	Foot	IR
+12/06/17	LB	Jonathan Casillas	Neck	IR
+11/29/17	DB	Janoris Jenkins	Ankle	IR
+11/27/17	DB	Donte' Deayon	Forearm	IR
+11/27/17	LB	Curtis Grant	Knee	IR
+11/27/17	LB	Deontae Skinner	Hamstring	IR
+11/14/17	LB	Keenan Robinson	Quadriceps	IR
+10/10/17	WR	Brandon Marshall	Ankle	IR
+10/09/17	WR	Odell Beckham	Ankle	IR
+10/09/17	WR	Dwayne Harris	Foot	IR
+09/03/17	DL	Josh Banks	Shoulder	IR
+09/02/17	LB	Mark Herzlich	Neck	IR
+08/19/17	WR	Keeon Johnson	Foot	IR
+05/30/17	DL	Ishaq Williams	Undisclosed	IR
+ 
+12/31/17	RB	Matt Forte	Knee	IR
+12/31/17	RB	Akeem Judd	Ankle	IR
+12/12/17	QB	Josh McCown	Hand	IR
+11/13/17	DL	Ed Stinson	Neck	IR
+10/31/17	TE	Jordan Leggett	Knee	IR
+10/25/17	DB	Xavier Coleman	Shoulder	IR
+10/04/17	DL	Dylan Donahue	Elbow	IR
+09/27/17	WR	Charone Peake	Ankle	IR
+09/04/17	LB	Lorenzo Mauldin	Back	IR
+09/01/17	WR	Quincy Enunwa	Neck	IR
+09/01/17	TE	Chris Gragg	Ankle	IR
+07/31/17	DB	Bryson Keeton	Knee - ACL	IR
+05/31/17	DB	Brisly Estime	Achilles	IR
+05/23/17	WR	Devin Smith	Knee - ACL	IR
+ 
+12/23/17	TE	Clive Walford	Concussion	IR
+12/15/17	DB	Obi Melifonwu	Hip	IR
+12/13/17	LB	Cory James	Knee - Meniscus	IR
+11/13/17	DB	Gareon Conley	Shin	IR
+09/09/17	K	Sebastian Janikowski	Back	IR
+ 
+01/11/18	RB	Darren Sproles	Knee	IR
+12/29/17	LB	Joe Walker	Neck	IR
+12/12/17	QB	Carson Wentz	Knee - ACL	IR
+11/22/17	K	Caleb Sturgis	Hip	IR
+10/31/17	LB	Jordan Hicks	Achilles	IR
+10/19/17	DB	Chris Maragos	Knee	IR
+09/15/17	RB	DJ Pumphrey	Hamstring	IR
+09/10/17	DB	Tre Sullivan	Undisclosed	OUT
+09/09/17	DB	Randall Goforth	Knee - ACL	IR
+05/12/17	DL	Aziz Shittu	Knee	IR
+05/04/17	WR	Dom Williams	Achilles	IR
+ 
+12/19/17	RB	James Conner	Knee - MCL	IR
+12/12/17	LB	Ryan Shazier	Spine	IR
+09/09/17	LB	Keion Adams	Undisclosed	IR
+08/25/17	DB	Antonio Crawford	Undisclosed	IR
+08/24/17	DB	Greg Ducre	Ankle	IR
+ 
+12/31/17	DL	Nazair Jones	Ankle	IR
+12/28/17	FB	Tre Madden	 	IR
+12/16/17	DB	Kam Chancellor	Neck	IR
+12/02/17	LB	Josh Forrest	Foot	IR
+11/14/17	RB	C.J. Prosise	Ankle	IR
+11/14/17	DB	Richard Sherman	Achilles	IR
+10/20/17	DL	Cliff Avril	Neck	IR
+10/04/17	RB	Chris Carson	Ankle	IR
+09/27/17	LB	Dewey McDonald	Knee - ACL	IR
+09/14/17	DB	DeAndre Elliott	Ankle	IR
+08/17/17	DB	Jordan Simone	Knee - ACL	IR
+07/30/17	DL	Malik McDowell	Head	OUT
+ 
+12/13/17	WR	Victor Bolden	Ankle	IR
+11/28/17	RB	Raheem Mostert	Knee	IR
+11/07/17	DB	Jaquiski Tartt	Forearm	IR
+11/06/17	TE	Cole Hikutini	Knee	IR
+11/04/17	WR	Pierre Garcon	Neck	IR
+10/30/17	DB	Jimmie Ward	Forearm	IR
+10/17/17	DL	Arik Armstead	Hand	IR
+10/10/17	DB	Asa Jackson	Hamstring	IR
+10/10/17	DL	Kaleb Ramsey	Personal	OUT
+09/09/17	LB	Jimmie Gilbert	Knee - ACL	IR
+09/02/17	WR	Aaron Burbridge	Hamstring	IR
+09/02/17	DL	Chris Jones	Undisclosed	IR
+09/02/17	DB	Don Jones	Knee	IR
+09/02/17	RB	Joe Williams	Ankle	IR
+08/16/17	LB	Donavin Newsom	Concussion	IR
+08/15/17	DB	Chanceller James	Knee - ACL	IR
+08/07/17	LB	Malcolm Smith	Pectoral	IR
+ 
+01/17/18	DL	Stevie Tu'ikolovatu	Undisclosed	IR
+12/20/17	DB	Justin Evans	Ankle	IR
+12/20/17	DB	Vernon Hargreaves	Hamstring	IR
+12/20/17	TE	O.J. Howard	Ankle	IR
+12/19/17	LB	Adarius Glanton	Lower Leg	IR
+10/25/17	DL	Noah Spence	Shoulder	IR
+10/10/17	K	Nick Folk	Knee	IR
+09/01/17	DL	DaVonte Lambert	Wrist	IR
+08/28/17	DL	Justin Trattou	Undisclosed	IR
+08/23/17	DB	Jude Adjei-Barimah	Knee	IR
+ 
+12/22/17	DB	LeShaun Sims	Hamstring	IR
+12/04/17	DL	DaQuan Jones	Biceps	IR
+09/20/17	LB	Aaron Wallace	Back	IR
+09/02/17	WR	Tajae Sharpe	Foot	IR
+09/02/17	QB	Alex Tanney	Foot	IR
+08/07/17	LB	Victor Ochi	Knee - ACL	IR
+
+12/23/17	RB	LeShun Daniels	Hand	IR
+12/19/17	DB	Montae Nicholson	Concussion	IR
+12/12/17	LB	Chris Carter	Lower Leg	IR
+12/12/17	RB	Byron Marshall	Hamstring	IR
+12/12/17	TE	Jordan Reed	Hamstring	IR
+11/21/17	WR	Terrelle Pryor	Ankle	IR
+11/21/17	RB	Chris Thompson	Lower Leg	IR
+11/14/17	LB	Will Compton	Foot	IR
+11/14/17	RB	Rob Kelley	Ankle	IR
+11/11/17	DL	Arthur Jones	Shoulder	IR
+10/28/17	LB	Mason Foster	Shoulder	IR
+10/19/17	DL	Jonathan Allen	Foot	IR
+10/10/17	LB	Trent Murphy	Knee - ACL	IR
+09/02/17	DL	Phillip Taylor	Quadriceps	IR
+08/01/17	RB	Keith Marshall	Knee	IR
